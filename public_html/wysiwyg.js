@@ -237,7 +237,7 @@ function wysiwyg(id) {
             text = methods.getSelectionText();
 
             if (cmdBar && text.length) {
-                    cmdBar.style.top = parseInt(cords.y + 15, 10) + "px";
+                    cmdBar.style.top = parseInt(cords.y - 50, 10) + "px";
                     cmdBar.style.left = parseInt(cords.x + 10, 10) + "px";
                     cmdBar.style.visibility = "visible";
                     properties.editor.style.borderColor = "Gold";
