@@ -123,7 +123,8 @@ function wysiwyg(id) {
             methods.enableEditor(true);
             properties.editor.style.border = "1px solid black";
             Dom.Event.add(properties.editor, "mouseup", methods.showCommands);
-
+            Dom.Event.add(properties.editor, "touchend", methods.showCommands);
+            
             // create the command prompt
             var fragment = document.createDocumentFragment(),
             divCmd = Dom.Element.create("div", {
